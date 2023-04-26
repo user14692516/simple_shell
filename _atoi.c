@@ -12,9 +12,9 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - This will check if character is a delimeter
+ * is_delim - This will check if character is a delimiter
  * @c: c is the char to check
- * @delim: delim is the delimeter string
+ * @delim: delim is the delimiter string
  * Return: The function will return 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
