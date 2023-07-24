@@ -1,2 +1,2 @@
 Simple simple 
-Group project 
+Group project
