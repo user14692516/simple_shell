@@ -1,9 +1,9 @@
 #include "hell.h"
 
-/**
- * execute - this will  execute a command with its entire path variables.
- * @data: a pointer to the program's data
- * Return: If sucess returns zero or return -1.
+/*
+ * execute - executing a command.
+ * @data: pointer of data in a program.
+ * Return: 0 for success
  */
 
 int execute(data_of_program *data)

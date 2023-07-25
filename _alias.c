@@ -1,10 +1,10 @@
 #include "hell.h"
 
-/**
- * print_alias - this will  add, remove or show aliases
- * @data: struct for the program's data
- * @alias: name of the alias to be printed
- * Return: zero if sucess, or other number if its declared in the arguments
+/*
+ * print_alias - supposed to edit aliases.
+ * @data: structure of data in the program.
+ * @alias: alias names that are supposed to be printed.
+ * Return: 0
  */
 
 int print_alias(data_of_program *data, char *alias)
@@ -38,11 +38,11 @@ int print_alias(data_of_program *data, char *alias)
 	return (0);
 }
 
-/**
- * get_alias - we continue to add, remove or show aliases
- * @data: struct for the program's data
- * @name: name of the requested alias.
- * Return: zero if sucess, or other number if its declared in the arguments
+/*
+ * get_alias - tasked with editing the aliases.
+ * @data: structure of data in the program.
+ * @name: alias names.
+ * Return: 0
  */
 char *get_alias(data_of_program *data, char *name)
 {
@@ -66,11 +66,11 @@ char *get_alias(data_of_program *data, char *name)
 
 }
 
-/**
- * set_alias - we add, or override alias
- * @alias_string: alias to be seted in the form (name='value')
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+/*
+ * set_alias - editing aliases.
+ * @alias_string: alias that has been set to a specific form.
+ * @data: structure of data in the program.
+ * Return: 0
  */
 
 int set_alias(char *alias_string, data_of_program *data)

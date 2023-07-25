@@ -1,10 +1,10 @@
 #include "hell.h"
 
-/**
- * env_get_key - this gets the value of an environment variable
- * @key: the environment variable of interest
- * @data: struct of the program's data
- * Return: a pointer to the value of the variable or NULL if it doesn't exist
+/*
+ * env_get_key - getting the value of a variable.
+ * @key: the chosen variable.
+ * @data: structure of data in the program.
+ * Return: a value pointer of the variable.
  */
 char *env_get_key(char *key, data_of_program *data)
 {
@@ -27,13 +27,12 @@ char *env_get_key(char *key, data_of_program *data)
 	return (NULL);
 }
 
-/**
- * env_set_key - this will overwrite the value of the environment variable
- * or create it if does not exist.
- * @key: name of the variable to set
- * @value: new value
- * @data: struct of the program's data
- * Return: 1 if the parameters are NULL, 2 if there is an erroror 0 if sucess.
+/*
+ * env_set_key - changing and creating the value of the variable.
+ * @key: variable name.
+ * @value: new number.
+ * @data:structure of data in a program.
+ * Return: 1 if NULL,2 in case of error and 0 for success
  */
 
 int env_set_key(char *key, char *value, data_of_program *data)
@@ -69,10 +68,10 @@ int env_set_key(char *key, char *value, data_of_program *data)
 }
 
 /**
- * env_remove_key -  it will remove a key from the environment
- * @key: the key to remove
- * @data: the sructure of the program's data
- * Return: 1 if the key was removed, 0 if the key does not exist;
+ * env_remove_key -  removing a key.
+ * @key: key that is supposed to be removed.
+ * @data: structure of data in the program.
+ * Return: 1 for a removed key and 0 if key doesnt exist.
  */
 int env_remove_key(char *key, data_of_program *data)
 {
@@ -103,10 +102,10 @@ int env_remove_key(char *key, data_of_program *data)
 }
 
 
-/**
- * print_environ - this one will print the current environ
- * @data: struct for the program's data
- * Return: nothing
+/*
+ * print_environ - supposed to print the current environment.
+ * @data: structure of data in the program.
+ * Return: NULL
  */
 void print_environ(data_of_program *data)
 {

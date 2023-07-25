@@ -1,9 +1,9 @@
 #include "hell.h"
 
-/**
- * expand_variables - it will expand the variables
- * @data: a pointer to a struct of the program's data
- * Return: nothing, but sets errno.
+/*
+ * expand_variables - tasked to expand variables.
+ * @data: pointer of data of a program.
+ * Return: NULL
  */
 
 void expand_variables(data_of_program *data)
@@ -50,11 +50,10 @@ void expand_variables(data_of_program *data)
 	}
 }
 
-/**
- * expand_alias - it willl expand the  aliases
- * @data: a pointer to a struct of the program's data
- *
- * Return: nothing, but sets errno.
+/*
+ * expand_alias - tasked with expanding the aliases.
+ * @data: pointer of data for a program.
+ * Return: NULL 
  */
 void expand_alias(data_of_program *data)
 {
@@ -92,11 +91,11 @@ void expand_alias(data_of_program *data)
 	}
 }
 
-/**
- * buffer_add -this will  append string at end of the buffer
- * @buffer: buffer to be filled
- * @str_to_add: string to be copied in the buffer
- * Return: nothing, but sets errno.
+/*
+ * buffer_add - tasked with appending the string.
+ * @buffer: buffer that is supposed to be filled.
+ * @str_to_add: string that is supposed to be copied
+ * Return: NULL
  */
 
 int buffer_add(char *buffer, char *str_to_add)
