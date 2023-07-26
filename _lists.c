@@ -1,10 +1,9 @@
 #include "hell.h"
 
-/**
- * builtins_list - this will executte the association
- * @data: struct for the program's data
- * Return: Returns the return of the function executed is there is a match,
- * otherwise returns -1.
+/*
+ * builtins_list - execution.
+ * @data: structure of data for the program.
+ * Return: 1 Otherwise -1
  **/
 int builtins_list(data_of_program *data)
 {

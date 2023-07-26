@@ -1,9 +1,9 @@
 #include "hell.h"
 
-/**
- * str_length - Outputs length of a str.
- * @string: ptr to str.
- * Return: ln of str.
+/*
+ * str_length - givin the string length.
+ * @string: string pointer.
+ * Return: string length.
  */
 int str_length(char *string)
 {
@@ -18,10 +18,10 @@ int str_length(char *string)
 	return (--length);
 }
 
-/**
- * str_duplicate - duplicates an str
- * @string: str copy
- * Return: arr ptr
+/*
+ * str_duplicate - duplicating a string
+ * @string: a copy of a string.
+ * Return: an array pointer.
  */
 char *str_duplicate(char *string)
 {
@@ -49,12 +49,12 @@ char *str_duplicate(char *string)
 	return (result);
 }
 
-/**
- * str_compare - Compare string1 and string2
- * @string1: First string, shorter
- * @string2: Second str, longer
- * @number: num of char
- * Return: 1strings equals,0 difference in strings
+/*
+ * str_compare - comparing strings.
+ * @string1: first string.
+ * @string2: second string.
+ * @number: character number.
+ * Return: 1
  */
 int str_compare(char *string1, char *string2, int number)
 {
@@ -88,12 +88,12 @@ int str_compare(char *string1, char *string2, int number)
 	}
 }
 
-/**
- * str_concat - concats two strs.
- * @string1: str to concat
- * @string2: str to concat
+/*
+ * str_concat - conccting two strings.
+ * @string1: first string to the conact.
+ * @string2: second string to the conact
  *
- * Return: ptr to the array
+ * Return: array pointer.
  */
 char *str_concat(char *string1, char *string2)
 {
@@ -133,11 +133,10 @@ char *str_concat(char *string1, char *string2)
 }
 
 
-/**
- * str_reverse - reverse a str.
- *
- * @string: ptr to str.
- * Return: void.
+/*
+ * str_reverse - reversing a string.
+ * @string: string pointer.
+ * Return: NULL
  */
 void str_reverse(char *string)
 {

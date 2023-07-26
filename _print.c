@@ -1,32 +1,29 @@
 #include "hell.h"
 
-/**
- * _print - array of chars in  stdr output
- * @string: ptr to array of chars
- * Return: num of bytes
- * Fail, -1
+/*
+ * _print - character in an array in stdr output
+ * @string: pointer to an array.
+ * Return: number of bytes.
  */
 int _print(char *string)
 {
 	return (write(STDOUT_FILENO, string, str_length(string)));
 }
-/**
- * _print- writes array of characters in sstdr error
- * @string: points array
- * Return: num of bytes
- * Fail, -1 is returned
+/*
+ * _print- writing an array of character.
+ * @string: pointers in an array
+ * Return: number of bytes.
  */
 int _printe(char *string)
 {
 	return (write(STDERR_FILENO, string, str_length(string)));
 }
 
-/**
- * _print_error - array of chars in  sdr error
- * @data: a pointer to the program's data'
- * @errorcode: error code
- * Return: the number of bytes
- * Fail,-1
+/*
+ * _print_error - characters in an array
+ * @data: data pointer to a program
+ * @errorcode: error in code
+ * Return: number of bytes.
  */
 int _print_error(int errorcode, data_of_program *data)
 {

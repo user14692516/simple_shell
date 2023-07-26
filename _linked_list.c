@@ -1,9 +1,9 @@
 #include "hell.h"
 
-/**
- * builtin_env - this one shows the environment where the shell runs
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+/*
+ * builtin_env - showing the running environment of shell.
+ * @data: structure of data in a program.
+ * Return: 0 for success.
  */
 int builtin_env(data_of_program *data)
 {
@@ -46,10 +46,10 @@ int builtin_env(data_of_program *data)
 	return (0);
 }
 
-/**
- * builtin_set_env - not well kmown lets continue
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+/*
+ * builtin_set_env - setting the running environment of shell.
+ * @data: structure of data in the program.
+ * Return: 0 for success
  */
 int builtin_set_env(data_of_program *data)
 {
@@ -67,10 +67,10 @@ int builtin_set_env(data_of_program *data)
 	return (0);
 }
 
-/**
- * builtin_unset_env - lets continue building
- * @data: struct for the program's data'
- * Return: ..
+/*
+ * builtin_unset_env - unsetting the running environment of shell.
+ * @data: structure of data in the program.
+ * Return: NULL
  */
 int builtin_unset_env(data_of_program *data)
 {
